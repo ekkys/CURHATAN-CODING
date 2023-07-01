@@ -1,0 +1,21 @@
+Sabtu, 1 Juli 2023
+
+Case : Clone dan Run e-sppd pemkan moker
+Problem :
+1. PHP Version tidak sesuai
+2. PHP version change dinamis Laragon tidak berjalan
+3. Redis belum terpasang
+
+Solusi:
+1. PHP Version tidak sesuai
+	a. Download PHP sesuai versi yang diperlukan disini : https://windows.php.net/download#php-8.0 
+
+2. PHP version change dinamis Laragon tidak berjalan:
+	a. Setting PATH Environment Variable untuk PHP nya di Windows 10 disini : https://sulhi.id/setting-path-environment-variable-di-windows-10/
+	b. Catatan : di case saya pada direktori C:\laragon\bin\php\php-8.0.29-nts-Win32-vs16-x64 
+		     php akan terbaca jika disitu hanya ada 1 folder file php saja kalau disi lebih dari 1 yang terbaca yang paling duluan dimasukkan kesitu
+3. Redis belum terpasang:
+	a. Install redis di projek laravel seperti di tutorial ini : 
+		https://stackoverflow.com/questions/61168156/logicexception-please-make-sure-the-php-redis-extension-is-installed-and-enable
+	b. Install redis di laragon seperti tutorial berikut : https://dev.to/dendihandian/installing-php-redis-extension-on-laragon-2mp3
+	c. Catatan : php_redis.dll nya saat mendownload versi TS dan NTS nya harus sama seperti PHP nya
